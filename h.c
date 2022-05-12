@@ -32,10 +32,41 @@ int max(int num, int num1)
     else
         return result * result1;
 }
+int mini(int num2,int num3)
+{   static int result2, result3;
+    if (num2 % 2 == 0 && num3 % 2 == 0)
+    {
+        result2 = num2 / 2;
+        result3 = num3 / 2;
+        return 2 * max(result2, result3);
+    }
+    else if (num2 % 3 == 0 && num3 % 3 == 0)
+    {
+        result2 = num2 / 3;
+        result3 = num3 / 3;
+        return 3 * max(result2, result3);
+    }
+    else if (num2 % 5 == 0 && num3 % 5 == 0)
+    {
+        result2 = num2 / 5;
+        result3 = num3 / 5;
+        return 5 * max(result2, result3);
+    }
+    else if (num2 % 7 == 0 && num3 % 7 == 0)
+    {
+        result2 = num2 / 7;
+        result3 = num3 / 7;
+        return 7 * max(result2, result3);
+    }
+    else if (result2 == 0)
+        return 1;
+}
 int main(void)
 {
-    int num;
-    num = max(1, 3);
+    int num,num1;
+    num1= mini(4,3);
+    num = max(5, 3);
+    printf("%d\n",num1);
     printf("%d", num);
     return 0;
 }
