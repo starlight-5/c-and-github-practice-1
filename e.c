@@ -59,4 +59,5 @@ int main(void)
     result1=mini_num(num4,num5,num6);
     printf("%d\n1%d",result,result1);
     return 0;
+    
 }
