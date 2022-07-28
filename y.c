@@ -34,5 +34,4 @@ int main(void)
     endtime[i]=start[i]+time[i];
     keytovalue(endtime,play);
     return 0;
- 
 }
