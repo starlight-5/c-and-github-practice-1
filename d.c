@@ -9,6 +9,6 @@ int main(void)
         printf("%d", num = num * 3);
         printf(" ");
         num1++;
-        
     }
+    return 0;
 }
