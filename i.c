@@ -6,5 +6,4 @@ int main(void)
     ptr=arr3;
     printf("%d %d %d %d %d", (*ptr)[0], (*ptr)[1],(*ptr)[2],(*ptr)[3],(*ptr)[4]);
     return 0;
-    
 }
